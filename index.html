@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    
+    <style type="text/css">
+        
+        .tblCalc{
+            border: 1px solid gray;
+            margin: 0;
+            padding: 0;
+            width: 250px;
+            text-align: center;
+        }
+    
+        .tblCalc input{
+            border: 1px solid gray;
+            margin: 5px;
+            width: 30px;
+        }
+        
+        #btnWide{
+            width: 80px;
+        }
+        
+        #editWide{
+            padding-left: 5px;
+            width: 250px;
+        }
+        
+    </style>
+</head>
+    
+<body>    
+    
+    <form name="calc" action="">
+        <table class="tblCalc" cellpadding=0 cellspacing=0>
+            <tr>
+                <td colspan=5 align="middle">
+                    <input id="editWide" name="ReadOut" type="text" size=28 value="0" width="250px"/>                
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="3"></td>
+                <td><input name="btnClear" type="button" value="C" onclick="clear()"/></td>
+                <td><input name="btnClearEntry" type="button" value="CE" onclick="clearEntry()"/></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="7" onclick="numPressed(7)" /></td>
+                <td><input type="button" value="8" onclick="numPressed(8)" /></td>               
+                <td><input type="button" value="9" onclick="numPressed(9)" /></td>
+                <td><input type="button" value="+" onclick="operation('+')" /></td>
+		<td><input type="button" value="-" onclick="operation('-')" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="numPressed(4)" /></td>
+                <td><input type="button" value="5" onclick="numPressed(5)" /></td>               
+                <td><input type="button" value="6" onclick="numPressed(6)" /></td>
+		<td><input type="button" value="&times;" onclick="operation('*')"  /></td>
+		<td><input type="button" value="&divide;" onclick="operation('/')"  /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="numPressed(1)" /></td>
+                <td><input type="button" value="2" onclick="numPressed(2)" /></td>               
+                <td><input type="button" value="3" onclick="numPressed(3)" /></td>
+		<td><input type="button" value="%" onclick="percent()" /></td>
+                <td><input type="button" value="&radic;" onclick="sqrt()" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="clear()" /></td>
+                <td><input type="button" value="." onclick="decimal()" /></td>               
+                <td><input type="button" value="+/-" onclick="neg()" /></td>
+                <td><input type="button" value="=" onclick="operation('=')" /></td>
+            </tr>            
+        </table>
+    </form>
+ <script src="calculator.js"></script>   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
